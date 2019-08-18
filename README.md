@@ -10,4 +10,16 @@ This is a basic informative website with description, history, contacts and imag
 4. Location with Google Maps plugin
 5. Email sending feature
 
-![alt](https://github.com/MrXavier/Solar-DLourdes-website/blob/master/readme%20pics/home_page.png)
+Following you can see some screen shots of the Solar D'Lourdes website. Enjoy : )
+
+![Home page 1](https://github.com/MrXavier/Solar-DLourdes-website/blob/master/readme%20pics/home_page.png)
+
+![Home page 2](https://github.com/MrXavier/Solar-DLourdes-website/blob/master/readme%20pics/home_page2.png)
+
+![Photo Gallery](https://github.com/MrXavier/Solar-DLourdes-website/blob/master/readme%20pics/photo_galery.png)
+
+![Photo Show](https://github.com/MrXavier/Solar-DLourdes-website/blob/master/readme%20pics/photo_show.png)
+
+![Location Map](https://github.com/MrXavier/Solar-DLourdes-website/blob/master/readme%20pics/location_map.png)
+
+![Email form](https://github.com/MrXavier/Solar-DLourdes-website/blob/master/readme%20pics/email_form.png)
