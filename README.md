@@ -10,4 +10,4 @@ This is a basic informative website with description, history, contacts and imag
 4. Location with Google Maps plugin
 5. Email sending feature
 
-![alt](https://www.gravatar.com/avatar/132be170b41c61fc6bc3fe6a7140a57d?s=32&d=identicon&r=PG)
+![alt](https://github.com/MrXavier/Solar-DLourdes-website/blob/master/readme%20pics/home_page.png)
