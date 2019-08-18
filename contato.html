@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<head> 
+<title>Solar d'Lourdes Recepções</title>
+
+<link rel="stylesheet" type="text/css" href="style.css"> </link>
+
+<!-- Including the Lobster font from Google's Font Directory -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
+<style>
+input, textarea { 
+    padding: 9px;
+    border: solid 1px #E5E5E5;
+    outline: 0;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;
+    width: 200px;
+    background: #FFFFFF url('bg_form.png') left top repeat-x;
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    border-radius:10px; 
+    }
+ 
+textarea { 
+    width: 300px;
+    max-width: 400px;
+    height: 120px;
+    line-height: 150%;
+    }
+ 
+input:hover, textarea:hover,
+input:focus, textarea:focus { 
+    border-color: #C9C9C9; 
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+    }
+ 
+.form label { 
+    margin-left: 10px; 
+    color: #999999; 
+    }
+ 
+.submit input {
+    width: auto;
+    padding: 9px 15px;
+    background: #617798;
+    border: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    }
+
+    .autocomplete-suggestions { border: 1px solid #BDBDBD; background: #FFF; cursor: default; overflow: auto; -webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); border-radius: 10px;}
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.mockjax.js"></script>
+<script type="text/javascript" src="src/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="scripts/countries.js"></script>
+<script type="text/javascript" src="scripts/demo.js"></script>
+
+<script language="JavaScript">
+function validateForm()
+{
+var x=document.forms["contact_form"]["nome"].value;
+var y=document.forms["contact_form"]["email"].value;
+  if ((x==null || x=="") || (y==null || y==""))
+  {
+    alert("Os campos obrigatórios devem ser informados.");
+    return false;
+  }
+}
+</script>
+
+</head>
+
+<html>
+	<body>
+		<div id="page" class="pagina">
+		
+			<div id="siteheader" class="cabecalho">
+				<img src="img/solar_header.png">
+				<div class="titulo" style="width:551px; height:20px; margin:auto; text-align:right; font-size:20px; padding-bottom:5px;">
+				<a href="https://www.facebook.com/solarde.recepcoes" target="_blank"> <img src="img/mini-img/facebook_icon.png" style="height:25px; float:left;"> </a>
+				(31) 3291-7445</div>
+			</div>
+			
+			<div class="menu">
+				<nav style="height: 40px;">
+					<ul class="fancyNav">
+						<li id="home"><a href="index.html" class="homeIcon">Inicio</a></li>
+						<li id="news"><a href="sobre.html">Sobre Nós</a></li>
+						<li id="about"><a href="servicos.html">Serviços</a></li>
+						<li id="services"><a href="galeria/galeria.html">Galeria de Fotos</a></li>
+						<li id="contact"><a href="localizacao.html">Localização</a></li>
+						<li id="contact"><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+			
+			<div class="conteudo">
+				<div class="texto" style="padding-top:5px;">
+					<h1 class="titulopagina">Contato</h1> 
+
+						<form method="post" name="contact_form" action="mail.php" onsubmit="return validateForm();">
+						<table>
+						<tr style="
+						    height: 30px;
+						">
+						<th>
+						<h3 class="titulo" style="
+						    margin-bottom: 0px;
+						    margin-top: 0px;
+						    width: 220px; border-bottom:solid 1px #BDBDBD">Seus Dados</h3>
+						</th>
+						<th style="
+						    padding-left: 20px;
+						    padding-right: 70px;
+						">
+						<h3 class="titulo" style="
+						    margin-bottom: 0px;
+						    margin-top: 0px;
+						    width: 100%; border-bottom:solid 1px #BDBDBD;
+						">Sua Festa</h3>
+						</th>
+						<th style="
+						    padding-left: 0px;
+						    padding-right: 20px;">
+						<h3 class="titulo" style="
+						    margin-bottom: 0px;
+						    margin-top: 0px;
+						    width: 100%; border-bottom:solid 1px #BDBDBD;
+						">Sua mensagem</h3>
+						</th>
+						</tr>
+						
+						<tr>
+						<td>
+							<p>
+							    <label for="name">Nome *</label>
+							    <input type="text" name="nome">
+							</p>
+							
+							<p>
+							    <label for="email">E-mail *</label>
+							    <input type="text" name="email">
+							</p>
+							
+							<p>
+							    <label for="contato">Contato</label>
+							    <input type="text" name="contato">
+							</p>
+						</td>
+						<td style="padding-left: 20px;">
+							<p>
+								<label for="evento" >Tipo de evento</label>
+								<input type="text" name="evento" id="autocomplete">
+							</p>
+							
+							<p>
+							    <label for="data">Data do Evento</label>
+							    <input type="text" name="data">
+							</p>
+							
+							<p>
+							    <label for="convidados">No. de Convidados</label>
+							    <input type="text" name="convidados">
+							</p>
+						</td>
+						<td>
+							<p style="margin-bottom: 0px; margin-top: 0px;">
+							    <label for="mensagem">Mensagem</label>
+							    <textarea type="text" name="mensagem" rows="5" cols="40" style="border-radius:5px;"></textarea>
+							</p>						    
+							    <input type="submit" value="Enviar" style="background:-webkit-gradient(linear, left top, left 25, from(#CFCFCF), color-stop(7%, #CFCFCF), to(#FFFFFF)); border:solid 1px #BDBDBD;">
+						</td>
+						</tr>
+						</table>
+						</form>
+						<p>* Informações obrigatórias.</p>
+				</div>
+				
+				<div class="rodape">
+					<div style="float:left;">
+						<address>
+						<span class="titulorodape"> <b>Endereço:</b><br> </span>
+						<p style="margin-top: 5px;">Santa Catarina, nº 1163 - Lourdes <br>
+						Belo Horizonte - MG<br>
+						Cep: 30170-081<br> </p>
+						<span class="titulorodape"> <b>E-mail:</b><br> </span>
+						<a href="contato.html"> recepcoes@solardlourdes.com.br </a>
+						
+						</address>
+						
+						
+					</div>
+					<div style="float:left; margin-left:70px;">
+						<span class="titulorodape"> <b>Central de Atendimento:</b><br> </span>
+						<div style="margin-top: 5px;">
+						<span class="texto">Fixo: &nbsp;&nbsp;&nbsp;(31) 3291-7445<br></span>
+						<span class="texto">Claro: (31) 8341-4343<img src="img/mini-img/logo-claro.gif" style="height:15px; margin-left:15px;"></span><br>
+						<span class="texto">Vivo: &nbsp;(31) 9722-4775<img src="img/mini-img/vivo-logo.gif" style="height:10px; margin-left:15px;"></span><br>
+						<span class="texto">Oi: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(31) 8599-1412<img src="img/mini-img/logo-oi.gif" style="height:15px; margin-left:15px;"></span><br>
+						<span class="texto">Tim: &nbsp;&nbsp;(31) 9360-4541<img src="img/mini-img/logo-tim.gif" style="height:10px; margin-left:15px;"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
